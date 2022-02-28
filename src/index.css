@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .header-container {
+    @apply w-screen h-auto bg-gray-100 grid lg:grid-cols-4 grid-cols-2;
+  }
+  .header-logo {
+    @apply p-5;
+  }
+  .header-links {
+    @apply col-start-2 lg:col-start-4 flex py-5;
+  }
+  .header-link {
+    @apply px-5;
+  }
+}
