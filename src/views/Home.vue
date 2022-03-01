@@ -1,5 +1,7 @@
 <template>
-  <div class="">Home page</div>
+  <div class="h-screen flex text-4xl items-center justify-center">
+    <div class="">CryptoSelf</div>
+  </div>
 </template>
 
 <script>
