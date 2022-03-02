@@ -6,7 +6,11 @@
       >
     </div>
     <div class="footer-links sm:invisible lg:visible">
-      <router-link to="/" class="footer-link">Home</router-link>
+      <router-link
+        :to="this.$store.state.isLoggedIn ? '/dashboard' : '/home'"
+        class="footer-link"
+        >{{ $store.state.isLoggedIn ? "Dashboard" : "Home" }}</router-link
+      >
       <router-link to="/" class="footer-link">Terms of Use</router-link>
       <router-link to="/" class="footer-link">Support</router-link>
     </div>

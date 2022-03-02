@@ -7,7 +7,11 @@
     </div>
     <div class="header-links">
       <!-- TODO::CREATE RESPONSIVE HAMBURGER ICON -->
-      <router-link to="/" class="header-link">Home</router-link>
+      <router-link
+        :to="this.$store.state.isLoggedIn ? '/dashboard' : '/home'"
+        class="header-link"
+        >{{ $store.state.isLoggedIn ? "Dashboard" : "Home" }}</router-link
+      >
       <router-link to="/" class="header-link">Contact us</router-link>
       <router-link to="/" class="header-link">About</router-link>
     </div>
