@@ -8,7 +8,7 @@
     <div class="header-links">
       <!-- TODO::CREATE RESPONSIVE HAMBURGER ICON -->
       <router-link
-        :to="this.$store.state.isLoggedIn ? '/dashboard' : '/home'"
+        :to="this.$store.state.isLoggedIn ? '/dashboard' : '/'"
         class="header-link"
         >{{ $store.state.isLoggedIn ? "Dashboard" : "Home" }}</router-link
       >

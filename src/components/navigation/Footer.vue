@@ -7,7 +7,7 @@
     </div>
     <div class="footer-links sm:invisible lg:visible">
       <router-link
-        :to="this.$store.state.isLoggedIn ? '/dashboard' : '/home'"
+        :to="this.$store.state.isLoggedIn ? '/dashboard' : '/'"
         class="footer-link"
         >{{ $store.state.isLoggedIn ? "Dashboard" : "Home" }}</router-link
       >
